@@ -16,12 +16,9 @@
         <img id="f" src="IMG_20170109_205547.jpg">
         <img id="g" src="IMG_20170326_200955.jpg">
             </a-assets>
-        <script id="plane" type="text/html">
-   <a-entity class="link"
-      geometry="primitive: plane; height: 2; width: 2"
-      material="shader: flat; src: ${thumb}"
+       
       
-      event-set__1="_event: mousedown; scale: 1 1 1"
+     
       event-set__2="_event: mouseup; scale: 1.2 1.2 1"
       event-set__3="_event: mouseenter; scale: 1.2 1.2 1"
       event-set__4="_event: mouseleave; scale: 1 1 1"></a-entity>
@@ -35,30 +32,30 @@
                 </a-entity>
             </a-entity>
       
-       <a-curvedimage id="vr" src="#a" transparent="true" 
+       <a-curvedimage id="vr" src="#a" transparent="true"  event-set="_event: mousedown; scale: 1 1 1"
               height="2" radius="3" theta-length="40" rotation="0 300 0" position="0 0 -2">
             </a-curvedimage>      
       
-       <a-curvedimage id="vr" src="#b" transparent="true" 
+       <a-curvedimage id="vr" src="#b" transparent="true" event-set="_event: mousedown; scale: 1 1 1"
               height="2" radius="3" theta-length="40" rotation="0 240 0" position="0 0 -2">
             </a-curvedimage>
 
-            <a-curvedimage id="pana" src="#c" transparent="true" 
+            <a-curvedimage id="pana" src="#c" transparent="true" event-set="_event: mousedown; scale: 1 1 1"
               height="2" radius="3" theta-length="40" rotation="0 190 0" position="0 0 -2">
             </a-curvedimage>
             
-            <a-curvedimage id="lyrics" src="#d" transparent="true" 
+            <a-curvedimage id="lyrics" src="#d" transparent="true" event-set="_event: mousedown; scale: 1 1 1"
               height="2" radius="3" theta-length="40" rotation="0  130 0" position="0 0 -2">
             </a-curvedimage>
             
-            <a-curvedimage id="video" src="#e" transparent="true" 
+            <a-curvedimage id="video" src="#e" transparent="true" event-set="_event: mousedown; scale: 1 1 1"
               height="2" radius="3" theta-length="40" rotation="0  80 0" position="0 0 -2">
             </a-curvedimage>
-      <a-curvedimage id="video" src="#f" transparent="true" 
+      <a-curvedimage id="video" src="#f" transparent="true" event-set="_event: mousedown; scale: 1 1 1"
               height="2" radius="3" theta-length="40" rotation="0  20 0" position="0 0 -2">
             </a-curvedimage>
       
-       <a-curvedimage id="vr" src="#g" transparent="true" 
+       <a-curvedimage id="vr" src="#g" transparent="true" event-set="_event: mousedown; scale: 1 1 1"
               height="2" radius="3" theta-length="40" rotation="0 -30 0" position="0 0 -2">
             </a-curvedimage>
       
