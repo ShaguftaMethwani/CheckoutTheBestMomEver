@@ -7,22 +7,11 @@
      <script src="https://unpkg.com/aframe-particle-system-component@1.0.5/dist/aframe-particle-system-component.min.js"></script>
   </head>
   <body>
-     <script>
-       AFRAME.registerComponent('cursor-listener', {
-  init: function () {
 
-    this.el.addEventListener('click', function (evt) {
-
-     console.log("trig");
-      
-    });
-  }
-});
-      </script>
     <a-scene>
       
       <a-assets>
-        <img id="floor" src="https://cdn.aframe.io/a-painter/images/floor.jpg" crossOrigin="anonymous">
+        <img id="floorr" src="https://cdn.aframe.io/a-painter/images/floor.jpg" crossOrigin="anonymous">
       <img id="skymap" src="https://cdn.aframe.io/a-painter/images/sky.jpg" crossOrigin="anonymous">
                 <img id="a" src="1015257_637522306258141_130097283_o.jpg">
                 <img id="b" src="11952702_1167082656638390_7351121213135203960_o.jpg">
@@ -45,7 +34,7 @@
                 </a-entity>
             </a-entity>
       
-       <a-curvedimage cursor-listener id="vr" src="#a" transparent="true"
+       <a-curvedimage id="vr" src="#a" transparent="true"
               height="2" radius="3" theta-length="40" rotation="0 300 0" position="0 0 -2">
             </a-curvedimage>      
       
@@ -68,7 +57,7 @@
               height="2" radius="3" theta-length="40" rotation="0  20 0" position="0 0 -2">
             </a-curvedimage>
       
-       <a-curvedimage cursor-listener id="vr" src="#g" transparent="true"  
+       <a-curvedimage id="vr" src="#g" transparent="true"  
               height="2" radius="3" theta-length="40" rotation="0 -30 0" position="0 0 -2">
             </a-curvedimage>
       
@@ -77,7 +66,7 @@
       <a-entity id="ground"
         geometry="primitive: circle; radius: 30.5"
         rotation="-90 0 0"
-        material="src: #floor"
+        material="src: #floorr"
       ></a-entity>
           <a-entity id="sky"
         geometry="primitive: sphere; radius: 500; phiLength: 360; phiStart: 0; thetaLength: 90"
