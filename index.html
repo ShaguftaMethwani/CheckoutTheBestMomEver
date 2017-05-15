@@ -9,7 +9,7 @@
     <a-scene>
       
       <a-assets>
-
+      <img id="skymap" src="https://cdn.aframe.io/a-painter/images/sky.jpg" crossOrigin="anonymous">
                 <img id="a" src="1015257_637522306258141_130097283_o.jpg">
                 <img id="b" src="11952702_1167082656638390_7351121213135203960_o.jpg">
                 <img id="c" src="12313899_1161716630523920_5867096020191549884_n.jpg">
@@ -71,8 +71,10 @@
       
  <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
           <a-light type="ambient" color="#fff"></a-light>
-          <a-sky src="https://upload.wikimedia.org/wikipedia/commons/f/f4/360-degree_Panorama_of_the_Southern_Sky.jpg"  ></a-sky>
-      
+          <a-entity id="sky"
+        geometry="primitive: sphere; radius: 500; phiLength: 360; phiStart: 0; thetaLength: 90"
+        material="shader: flat; side: back; height: 2048; src: #skymap; width: 2048"
+      ></a-entity>
       
      
       
