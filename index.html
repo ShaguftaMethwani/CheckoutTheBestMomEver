@@ -7,6 +7,18 @@
      <script src="https://unpkg.com/aframe-particle-system-component@1.0.5/dist/aframe-particle-system-component.min.js"></script>
   </head>
   <body>
+     <script>
+       AFRAME.registerComponent('cursor-listener', {
+  init: function () {
+
+    this.el.addEventListener('click', function (evt) {
+
+     console.log("trig");
+      
+    });
+  }
+});
+      </script>
     <a-scene>
       
       <a-assets>
@@ -21,18 +33,7 @@
         <img id="g" src="IMG_20170326_200955.jpg">
             </a-assets>
        
-     <script>
-       AFRAME.registerComponent('cursor-listener', {
-  init: function () {
-
-    this.el.addEventListener('click', function (evt) {
-
-     console.log("trig");
-      
-    });
-  }
-});
-      </script>
+    
      
     
   <a-entity>
@@ -44,7 +45,7 @@
                 </a-entity>
             </a-entity>
       
-       <a-curvedimage cursor-listener id="vr" src="#a" transparent="true"  
+       <a-curvedimage cursor-listener id="vr" src="#a" transparent="true"
               height="2" radius="3" theta-length="40" rotation="0 300 0" position="0 0 -2">
             </a-curvedimage>      
       
@@ -80,7 +81,7 @@
        <a-entity id="ground"
         geometry="primitive: circle; radius: 30.5"
         rotation="-90 0 0"
-        material="src: #floor"
+        material="src: https://cdn.aframe.io/a-painter/images/floor.jpg"
       ></a-entity>
       <a-entity particle-system="preset: snow"></a-entity>
      
