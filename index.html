@@ -74,15 +74,16 @@
       
  <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
           <a-light type="ambient" color="#fff"></a-light>
+      <a-entity id="ground"
+        geometry="primitive: circle; radius: 30.5"
+        rotation="-90 0 0"
+        material="src: #floor"
+      ></a-entity>
           <a-entity id="sky"
         geometry="primitive: sphere; radius: 500; phiLength: 360; phiStart: 0; thetaLength: 90"
         material="shader: flat; side: back; height: 2048; src: #skymap; width: 2048"
       ></a-entity>
-       <a-entity id="ground"
-        geometry="primitive: circle; radius: 30.5"
-        rotation="-90 0 0"
-        material="src: https://cdn.aframe.io/a-painter/images/floor.jpg"
-      ></a-entity>
+       
       <a-entity particle-system="preset: snow"></a-entity>
      
       
