@@ -7,8 +7,9 @@
   </head>
   <body>
     <a-scene>
-      <a-text value="Happy mothers' day!" color="white"></a-text>
+      
       <a-assets>
+<audio id="river" src="http://songolum.com/listen/07L55FRhyRnXxLmTuZ2tvi-dr4DB271T3tDk4t78oDI/preview.mp3" preload="auto"></audio>
                 <img id="a" src="1015257_637522306258141_130097283_o.jpg">
                 <img id="b" src="11952702_1167082656638390_7351121213135203960_o.jpg">
                 <img id="c" src="12313899_1161716630523920_5867096020191549884_n.jpg">
@@ -70,7 +71,7 @@
       
  <a-light type="directional" color="#fff" intensity="0.2" position="-1 2 1"></a-light>
           <a-light type="ambient" color="#fff"></a-light>
-          <a-sky src="https://upload.wikimedia.org/wikipedia/commons/f/f4/360-degree_Panorama_of_the_Southern_Sky.jpg" ></a-sky>
+          <a-sky src="https://upload.wikimedia.org/wikipedia/commons/f/f4/360-degree_Panorama_of_the_Southern_Sky.jpg" sound="src: #river; autoplay: true; loop: true" ></a-sky>
       
       
      
